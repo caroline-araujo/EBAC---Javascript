@@ -76,6 +76,7 @@ if(formulario1)
 
     });
 
+const formulario2 = document.getElementById('formulario-02');
 
 function validaCampo(elemento){
 
@@ -144,8 +145,6 @@ function validaEmail(elemento){
 
 }
 
-const uf = document.getElementsByClassName('uf');
-
 function validaCampoUF(elemento) {
     elemento.addEventListener('focusout', function(event) {
     event.preventDefault();
@@ -180,4 +179,8 @@ for( let emFoco of camposNumericos) {
 
 for( let emFoco of camposEmail) {
     validaEmail(emFoco);
+}
+
+for (let emFoco of camposObrigatorios) {
+    validaCampoUF(emFoco);
 }
