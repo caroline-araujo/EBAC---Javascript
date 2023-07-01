@@ -181,6 +181,6 @@ for( let emFoco of camposEmail) {
     validaEmail(emFoco);
 }
 
-for (let emFoco of camposObrigatorios) {
+for (let emFoco of camposuf) {
     validaCampoUF(emFoco);
 }
